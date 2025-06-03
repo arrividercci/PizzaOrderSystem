@@ -23,3 +23,8 @@ app.MapPizzaEndpoints();
 
 app.Run();
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<PizzaDbContext>();
+    db.Database.Migrate();
+}

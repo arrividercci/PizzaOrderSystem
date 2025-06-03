@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PizzaService.Configurations;
+using PizzaService.Data.Configurations;
 using PizzaService.Models;
 
 namespace PizzaService.Data
